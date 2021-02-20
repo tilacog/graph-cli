@@ -299,6 +299,7 @@ const startTestEnvironment = async tempdir =>
       // Bring up the test environment
       await compose.upAll({
         cwd: path.join(tempdir, 'compose'),
+	log: true,
       })
     },
   )
