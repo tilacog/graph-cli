@@ -319,7 +319,7 @@ const waitForTestEnvironment = async ({
         step(spinner, 'Skip waiting for IPFS')
       } else {
         await waitFor(
-          10000,
+          100000,
           async () =>
             new Promise((resolve, reject) => {
               http
